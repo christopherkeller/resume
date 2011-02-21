@@ -1,0 +1,424 @@
+% resume.tex
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item\ []%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item\ []%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf\ ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE\ \textbf{Christopher Keller}}
+
+988 Sakura Drive\ \ \textbullet\
+\ \ San Jose, CA 95112
+\\
+408-250-7220\ \ \textbullet\
+\ \ cnkeller@gmail.com
+
+\end{center}
+
+\hrule\
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item\
+	\headerrow
+		{\textbf{Computer Sciences Corporation}}
+		{\textbf{NASA Ames Research Center, CA}}
+	\\
+	\headerrow
+		{\emph{Principal Systems Security Leader}}
+		{\emph{2007 -- Present}}
+	\begin{itemize*}
+		\item\ In addition to being the development operations lead for NASA’s 
+		Advanced Supercomputing Center IT Security team, I am responsible for 
+		the information and data architecture that allows the various groups to 
+		exchange information.
+		\item\ currently deploying a robust operations infrastructure using Xen and Puppet
+		\item\ create Active Security Architecture framework using Rails, Python, MySQL,
+		Apache to data mine systems, scans, and logs for adherence to NIST 800--53 
+		\item\ design robust web API using Python, PHP, ReST principles to deliver security
+		relevant data to development groups and outside organizations
+		\item\ Provide security consulting to Nebula Cloud Computing effort
+		\item\ Deployed NASA’s first Arcsight/Oracle ESM installation.  The deployment is
+		being used as the model for an agency--wide deployment of ArcSight.
+	\end{itemize*}
+
+	\item\
+	\headerrow
+		{\textbf{Advanced Management Technology, Inc}}
+		{\textbf{NASA Ames Research Center, CA}}
+	\\
+	\headerrow
+		{\emph{Senior Systems Architect}}
+		{\emph{2006 -- 2007}}
+	\begin{itemize*}
+		\item\ Development operations lead for NASA’s Advanced Supercomputing Center IT
+		Security team. Responsible for managing the group and all deliverables. 
+		\item\ Developed a hardware and software security architecture for protecting
+		NASA’s supercomputers
+		\item\ Developed a certified security architecture that is NIST, FISMA, and
+		HSPD-12 compliant, allowing for multi-factor authentication and secure data 
+		transfer from anywhere in world
+	\end{itemize*}
+	
+	\headerrow
+		{\emph{Technical Lead, Tools}}
+		{\emph{2004 -- 2005}}
+	\begin{itemize*}
+		\item\ Responsible for creating the tools group and focusing the team on
+		practical applications of technology rather than research projects
+		\item\ deployed Nagios for monitoring project Columbia
+		\item\ consolidated all databases to ensure data integrity and reduced costs
+		associated with various architectures
+		\item\ developed a data warehouse for NASA’s Return To Flight effort and worked on CMMI Level 2 accreditation
+		\item\ replaced a legacy AR Remedy system with the Open Ticket Reporting System.
+		\item\ created a weekly presentation  on new software/hardware technologies
+		with a focus on how they can be used at NASA
+	\end{itemize*}		
+		
+	\headerrow
+		{\emph{Senior Software Engineer}}
+		{\emph{2003 -- 2004}}
+	\begin{itemize*}
+		\item\ using Java and the Globus Toolkit (versions 2 \& 3) develop capabilities
+		for NASA’s Information Power Grid and Marshall Space Flight Center ISS science portal
+	\end{itemize*}		
+
+	\item\
+	\headerrow
+		{\textbf{Interclypse}}
+		{\textbf{San Jose, CA}}
+	\\
+	\headerrow
+		{\emph{Founder}}
+		{\emph{2003 -- 2004}}
+	\begin{itemize*}
+		\item\ Founded company to provide an aggressive approach to software and systems development
+		to the U.S. intelligence agencies.
+		\item\ Served as Linux and open source strategist for various projects: migrating from
+		enterprise Sun servers with Oracle to Linux clusters using Oracle RAC, 
+		\item\ Linux systems kernel performance analysis \& tuning for realtime processing
+	\end{itemize*}
+	
+	\item\
+	\headerrow
+		{\textbf{BeamReach Networks, Inc}}
+		{\textbf{Sunnyvale, CA}}
+	\\
+	\headerrow
+		{\emph{Senior Systems \& Software Engineer}}
+		{\emph{2001 -- 2003}}
+	\begin{itemize*}
+		\item\ Architected and developed a multi-tiered testing framework for fixed-wireless
+		product using open source and COTS tools for Integration and Test effort, including
+		Postgres, Oracle 8i \& 9i, C, PHP and LAMP stack
+		\item\ Assisted with security scanning, vulnerability and exploit auditing, Java development
+		and performance tuning, embedded development in C, and overall system capacity planning for
+		the system management software
+		\item\ Performed all aspects of CIO role: enterprise systems and network architecture of
+		corporate, engineering, and field networks including purchasing, installation, documentation,
+		and maintenance, and security operations
+	\end{itemize*}
+
+	\item\
+	\headerrow
+		{\textbf{ePropose, Inc}}
+		{\textbf{San Francisco, CA}}
+	\\
+	\headerrow
+		{\emph{Senior Software Engineer}}
+		{\emph{2000 -- 2001}}
+	\begin{itemize*}
+		\item\ Initially responsible for software development on the main product and then transitioned
+		into the lead for development operations.
+		\item\ Lead Development Operations team for Java based product; worked with core teams on
+		improvements, bottlenecks and deployment for each customer.
+		\item\ Lead engineer in Release Management Infrastructure group; Developed nightly generation of
+		API's, automated regression testing, and nightly code builds
+		\item\ Java developer in Professional Services; analyzed client requirements and developed custom
+		changes as needed
+		\item\ Assisted marketing team in transitioning material from a framework based approach to ASP
+		model
+	\end{itemize*}
+	
+	\item\
+	\headerrow
+		{\textbf{Science Applications International Corporation}}
+		{\textbf{Annapolis, MD}}
+	\\
+	\headerrow
+		{\emph{Senior Software Engineer}}
+		{\emph{1995 -- 2000}}
+	\begin{itemize*}
+		\item\ Consultant responsible for project management, software developer, systems administration and
+		all other tasks as assigned.
+		\item\ Task lead and data-flow architect on a multi-tier system involving Java, Perl, HTML, and
+		Bourne/C shell scripting for processing near real-time data feeds into the largest research Oracle
+		installation in the world
+		\item\ Professional Services developer on an Canadian ISP billing framework consisting of Java, C++,
+		Perl, Oracle, JavaScript, HTML, and Cisco IOS
+		\item\ Lead developer on a Java based system designed to reformat legacy data into XML through XSL-T
+		and CSS
+		\item\ Maryland development  lead for NIMA's imagery system consisting of Client/Server and Web based
+		software design in Perl, C, C++, X/Motif, Sybase
+		\item\ Systems administration consultant for Royal Air Force imagery network consisting of hundreds of
+		Solaris systems
+	\end{itemize*}
+	
+	\item\
+	\headerrow
+		{\textbf{University of Maryland, Department of Astronomy}}
+		{\textbf{Goddard Space Flight Center, MD}}
+	\\
+	\headerrow
+		{\emph{Research Assistant}}
+		{\emph{1991 -- 1995}}
+	\begin{itemize*}
+		\item\ Assisted University of Maryland professor in geophysical and remote sensing research.
+		\item\ Designed and implemented software system in C, Bourne Shell, and IDL to automatically retrieve and
+		process remote sensing data
+		\item\ Systems administrator for a network of HP Apollo workstations
+	\end{itemize*}
+\end{itemize}
+
+\hrule\
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item\ [Languages:]
+	C, Objective-C, Perl, Python, shell script, SQL
+	\item\ [Databases:]
+	MySQL
+	\item\ [Operating Systems and Virtualization:]
+	EC2, Linux, OS X, Xen
+	\item\ [Interests:]
+	cloud computing, development operations, technical management, scalable architectures	
+\end{description*}
+\end{indentsection}
+
+\hrule\
+\vspace{-0.4em}
+\subsection*{Media}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item\ 
+	\headerrow
+		{\textbf{CENIC Conference}}
+		{\textbf{Monterrey, CA}}
+	\\
+	\headerrow
+		{\emph{Representational State Transfer (REST) in Practice}}
+		{\emph{2010}}
+		
+	\item\ 
+	\headerrow
+		{\textbf{Java By Example}}
+		{\textbf{Sams Publishing}}
+	\\
+	\headerrow
+		{\emph{Code contributions involving multi-threading and sound control}}
+		{\emph{1997}}
+\end{itemize}
+
+
+\hrule\
+\vspace{-0.4em}
+\subsection*{Awards}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item\ 
+	\headerrow
+		{\textbf{Group Honor Award}}
+		{\textbf{NASA Ames Research Center}}
+	\\
+	\headerrow
+		{\emph{Security Architecture and Development}}
+		{\emph{2010}}
+
+	\item\ 
+	\headerrow
+		{\textbf{Group Achievement Award}}
+		{\textbf{NASA Ames Research Center}}
+	\\
+	\headerrow
+		{\emph{IT Security Practices}}
+		{\emph{2008}}
+
+	\item\ 
+	\headerrow
+		{\textbf{Certificate of Appreciation}}
+		{\textbf{NASA Ames Research Center}}
+	\\
+	\headerrow
+		{\emph{Outstanding Performance}}
+		{\emph{2007}}
+	
+	\item\ 
+	\headerrow
+		{\textbf{Letter of Commendation}}
+		{\textbf{Space Shuttle Orbiter Team}}
+	\\
+	\headerrow
+		{\emph{Data Warehouse Design and Development}}
+		{\emph{2007}}
+		
+	\item\ 
+	\headerrow
+		{\textbf{Employee Award}}
+		{\textbf{Advanced Management Technology, Inc}}
+	\\
+	\headerrow
+		{\emph{Outstanding Performance}}
+		{\emph{2005}}
+
+	\item\ 
+	\headerrow
+		{\textbf{Certificate of Excellence}}
+		{\textbf{NASA Advanced Supercomputing}}
+	\\
+	\headerrow
+		{\emph{Project Columbia}}
+		{\emph{2005}}
+
+	\item\ 
+	\headerrow
+		{\textbf{Group Achievement Award}}
+		{\textbf{NASA Ames Research Center}}
+	\\
+	\headerrow
+		{\emph{Project Columbia}}
+		{\emph{2005}}
+
+	\item\ 
+	\headerrow
+		{\textbf{Certificate of Excellence}}
+		{\textbf{NASA Ames Research Center}}
+	\\
+	\headerrow
+		{\emph{IT Security}}
+		{\emph{2004}}
+
+	\item\ 
+	\headerrow
+		{\textbf{Various}}
+		{\textbf{Department of Defense}}
+	\\
+	\headerrow
+		{\emph{Classified}}
+		{\emph{1998}}
+		\item\ 
+	\headerrow
+		{\textbf{Various}}
+		{\textbf{Department of Defense}}
+	\\
+	\headerrow
+		{\emph{Classified}}
+		{\emph{1997}}
+		
+\end{itemize}
+
+\hrule\
+\vspace{-0.4em}
+\subsection*{Security Clearances}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item\ 
+	\headerrow
+		{\textbf{TS/SSBI}}
+		{\textbf{Department of Defense}}
+	\\
+	\headerrow
+		{\emph{}}
+		{\emph{2005 -- 2008}}
+		
+		\item\ 
+	\headerrow
+		{\textbf{TS/SCI}}
+		{\textbf{Department of Defense}}
+	\\
+	\headerrow
+		{\emph{Lifestyle and CI Polygraph}}
+		{\emph{1996 -- 2000}}
+\end{itemize}
+
+\hrule\
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item\ 
+	\headerrow
+		{\textbf{University of Maryland, University College}}
+		{\textbf{College Park, MD}}
+	\\
+	\headerrow
+		{\emph{Department of Computer Science, B.S. Computer Science}}
+		{\emph{1995 -- 1996}}
+	\begin{itemize*}
+		\item\ 3.7 final GPA
+	\end{itemize*}
+
+	\item\ 
+	\headerrow
+		{\textbf{University of Maryland}}
+		{\textbf{College Park, MD}}
+	\\
+	\headerrow
+		{\emph{Department of Computer Science}}
+		{\emph{1990 -- 1995}}
+	\begin{itemize*}
+		\item\ Extensive studies in cognitive psychology.
+	\end{itemize*}
+\end{itemize}
+
+\end{document}
