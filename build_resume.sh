@@ -1,3 +1,3 @@
 #!/bin/sh
 
-xelatex resume.tex 
+/usr/texbin/xelatex resume.tex 
