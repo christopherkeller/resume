@@ -1,44 +1,4 @@
-% resume.tex
-%!TEX TS-program = xelatex
-\documentclass[10pt,letterpaper]{article}
-\usepackage[letterpaper,margin=0.75in]{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage{mdwlist}
-\usepackage{textcomp}
-\usepackage{fontspec}
-\defaultfontfeatures{Ligatures=TeX}
-\setromanfont{Birka LT Pro}
-\pagestyle{empty}
-\setlength{\tabcolsep}{0em}
-
-% indentsection style, used for sections that aren't already in lists
-% that need indentation to the level of all text in the document
-\newenvironment{indentsection}[1]%
-{\begin{list}{}%
-	{\setlength{\leftmargin}{#1}}%
-	\item[]%
-}
-{\end{list}}
-
-% opposite of above; bump a section back toward the left margin
-\newenvironment{unindentsection}[1]%
-{\begin{list}{}%
-	{\setlength{\leftmargin}{-0.5#1}}%
-	\item[]%
-}
-{\end{list}}
-
-% format two pieces of text, one left aligned and one right aligned
-\newcommand{\headerrow}[2]
-{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-	#1 &
-	#2 \\
-\end{tabular*}}
-
-% make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP} {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf\ ++}}
-% and the actual content starts here
-\begin{document}
+%!TEX root=index.tex
 
 \begin{center}
 {\LARGE\ \textbf{Christopher Keller}}\\
@@ -452,6 +412,3 @@ linkedin.com/in/christopherkeller\\
 		\item\ Extensive studies in cognitive psychology.
 	\end{itemize*}
 \end{itemize}
-
-
-\end{document}
