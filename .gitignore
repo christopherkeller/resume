@@ -1,8 +1,21 @@
-/.*
-/resume.pdf
-/resume.aux
-/resume.log
-/old
-/Makefile
-/salary_history
+# Various LaTeX by products
+*.aux
+*.gz
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.xdv
+*.blg
+*.bbl
+*.acn
+*.glo
+*.ilg
+*.ind
+*.ist
+*.toc
+*.idx
+*.synctex.gz
 
+# Output files
+*.pdf
