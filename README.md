@@ -6,4 +6,4 @@ If you don't want to do your own fonts, you don't need xelatex as the processor.
 <li>index.tex handles the document formatting</li>
 <li>main.tex contains the actual content</li>
 </ul>
-<p>Jobs specific resume? Branch!
+<p>Job specific resume? Branch!
