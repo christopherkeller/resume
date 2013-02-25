@@ -1,4 +1,5 @@
 % resume.tex
+%!TEX TS-program = xelatex
 \documentclass[10pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.75in]{geometry}
 \usepackage[utf8]{inputenc}
@@ -35,27 +36,41 @@
 \end{tabular*}}
 
 % make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP}
-{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf\ ++}}
-
+\newcommand{\CPP} {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf\ ++}}
 % and the actual content starts here
 \begin{document}
 
 \begin{center}
-{\LARGE\ \textbf{Christopher Keller}}
-
-25257 Bald Eagle Terrace\ \ \textbullet\
-\ \ Chantilly, VA 20152
-\\
+{\LARGE\ \textbf{Christopher Keller}}\\
+618 Garden Rose Court\ \ \textbullet\
+\ \ Greer, SC 29651 \\
+~\\
+linkedin.com/in/christopherkeller\\
 408-250-7220\ \ \textbullet\
+\ \ @cnkeller \ \textbullet\
 \ \ cnkeller@gmail.com
-
 \end{center}
 
 \hrule\
 \vspace{-0.4em}
-\subsection*{Experience}
+\subsection*{Core Technical Skills}
 
+\begin{indentsection}{\parindent}
+	\hyphenpenalty=1000
+	\begin{description*}
+		\item[Languages:]
+		C, Python, shell scripts, \textsc{SQL}
+		\item[Databases:]
+		My\textsc{SQL}, Cassandra
+		\item[Operating Systems and Virtualization:]
+		Linux, \textsc{OS X}, Xen
+		\item[Concepts:]
+		big data, cloud computing,  scalable architectures, development and operations, technical management
+	\end{description*}
+\end{indentsection}
+\hrule\
+\vspace{-0.4em}
+\subsection*{Experience}
 \begin{itemize}
 	\parskip=0.1em
 
@@ -65,21 +80,27 @@
 		{\textbf{NASA Ames Research Center, CA}}
 	
 	\headerrow
-		{\emph{Principal Systems Security Leader}}
-		{\emph{2007--Present}}
+		{\emph{Solutions Architect}}
+		{\emph{Since 2012}}
 	\begin{itemize*}
-		\item\ Lead engineer for NASA Supercomputing Information Security team, consisting of four full-time and 
-		one part time engineer
-		\item\ Architect and develop a scalable replacement for an inferior Arcsight SIEM using Cassandra, Rails, 
-		Python, and Apache
+	\item\ Solutions architect on the design of a big data climate service for the next generation of ClimatEdge\texttrademark
+    \item\ Solutions architect specializing in virtualization and cloud for the NASA Earth Exchange scientific cloud designed to support highly configurable persistent nodes and interface with NASA's largest supercomputer
+	\item\ Using Xen and Puppet, design a quickly deployable virtualized infrastructure capable of supporting a dynamic
+	tasking environment
+	\item\ Architect and develop a real-time scalable replacement event management system for an Arcsight SIEM using Cassandra, Python, Jenkins, and Rails
+	\end{itemize*}
+	
+	\headerrow
+		{\emph{Principal Systems Security Leader}}
+		{\emph{2007--2012}}
+	\begin{itemize*}
+		\item\ Lead engineer for NASA Supercomputing Information Security team, consisting of one part-time and four full-time engineers
 		\item\ Mentor junior staff and ensure on-time delivery of all customer projects, from
 		conception through end-of-life, as well as adherence to all Federal compliance mandates, such as FISMA, FDCC, and NIST 800-53
-		\item\ Using Xen and Puppet, design a quickly deployable infrastructure capable of supporting a dynamic
-		tasking environment
 		\item\ Design robust web APIs using Python, PHP, ReST principles to deliver security
 		relevant data to development groups and outside organizations
 	\end{itemize*}
-
+	
 	\item\
 	\headerrow
 		{\textbf{Advanced Management Technology, Inc}}
@@ -174,7 +195,7 @@
 		{\emph{Senior Software Engineer}}
 		{\emph{1995--2000}}
 	\begin{itemize*}
-		\item\ Professional Services developer on an Canadian ISP billing framework consisting of Java, C++,
+		\item\ Professional Services developer on an Canadian ISP billing framework consisting of Java, \CPP,
 		Perl, Oracle, JavaScript, HTML, and Cisco IOS
 		\item\ Task lead and data-flow architect on a system involving Java, Perl, HTML, and
 		Bourne/C shell scripting for processing near real-time data feeds into the largest research Oracle
@@ -182,7 +203,7 @@
 		\item\ Lead developer on a Java based system designed to reformat legacy data into XML through XSL-T
 		and CSS
 		\item\ Maryland development lead for NIMA's imagery system consisting of Client/Server and Web based
-		software design in Perl, C, C++, X/Motif, Sybase
+		software design in Perl, C, \CPP, X/Motif, Sybase
 		\item\ Systems administration consultant for Royal Air Force imagery network consisting of hundreds of
 		Solaris systems
 	\end{itemize*}
@@ -205,23 +226,46 @@
 
 \hrule\
 \vspace{-0.4em}
-\subsection*{Media}
+\subsection*{Presentations \& Publications}
 
 \begin{itemize}
 	\parskip=0.1em
-
 	\item\ 
 	\headerrow
+		{\textbf{COTS to Cassandra}}
+		{\textbf{Software Developers Journal}}
+	\\
+	\headerrow
+		{\emph{Author}}
+		{\emph{Vol 2, No. 1 2013}}
+    \item\ 
+	\headerrow
+		{\textbf{Cassandra Users Group}}
+		{\textbf{Vienna, VA \& San Mateo, CA}}
+	\\
+	\headerrow
+		{\emph{Real World Cassandra at NASA (Speaker)}}
+		{\emph{2012}}
+	\item\
+	\headerrow
+		{\textbf{Investor Big Data Day}}
+		{\textbf{New York, NY}}
+	\\
+	\headerrow
+		{\emph{Panelist}}
+		{\emph{2012}} 
+	\item\
+    \headerrow
 		{\textbf{CENIC Conference}}
 		{\textbf{Monterey, CA}}
 	\\
 	\headerrow
-		{\emph{Representational State Transfer (REST) in Practice}}
+		{\emph{Representational State Transfer (REST) in Practice (Speaker)}}
 		{\emph{2010}}
 	\item\ 
 	\headerrow
 		{\textbf{Research Paper}}
-		{\textbf{Ames Research Center, CA}}
+		{\textbf{NASA Ames Research Center, CA}}
 	\\
 	\headerrow
 		{\emph{Addressing the Tension Between Strong Perimeter Control and Usability}}
@@ -292,7 +336,7 @@
 	\item\ 
 	\headerrow
 		{\textbf{Certificate of Excellence}}
-		{\textbf{NASA Advanced Supercomputing}}
+		{\textbf{NASA Advanced Supercomputing Division}}
 	\\
 	\headerrow
 		{\emph{Project Columbia}}
@@ -377,6 +421,17 @@
 
 	\item\ 
 	\headerrow
+		{\textbf{NPS Solution Leadership Institute}}
+		{\textbf{Falls Church, VA}}
+	\headerrow
+		{\emph{Solutions Architecture}}
+		{\emph{2012 -- 2013}}
+	\begin{itemize*}
+		\item\ Expected certification
+	\end{itemize*}
+
+	\item\ 
+	\headerrow
 		{\textbf{University of Maryland, University College}}
 		{\textbf{College Park, MD}}
 	\headerrow
@@ -398,21 +453,5 @@
 	\end{itemize*}
 \end{itemize}
 
-\hrule\
-\vspace{-0.4em}
-\subsection*{Core Technical Skills}
 
-\begin{indentsection}{\parindent}
-	\hyphenpenalty=1000
-	\begin{description*}
-		\item[Languages:]
-		C, Python, shell scripts, SQL
-		\item[Databases:]
-		MySQL, Cassandra
-		\item[Operating Systems and Virtualization:]
-		Linux, OS X, Xen
-		\item[Concepts:]
-		cloud computing, development and operations, technical management, scalable architectures	
-	\end{description*}
-\end{indentsection}
 \end{document}
