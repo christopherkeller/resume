@@ -2,5 +2,7 @@ While I tweaked the resume to my tastes, it's an amalgamation of things I've fou
 
 If you don't want to do your own fonts, you don't need xelatex as the processor.
 
-index.tex handles the document formatting.
-main.tex contains the actual content.
+<ul>
+<li>index.tex handles the document formatting</li>
+<li>main.tex contains the actual content</li>
+</ul>
