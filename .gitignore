@@ -16,6 +16,13 @@
 *.toc
 *.idx
 *.synctex.gz
+*.d
+
+# Private sections
+contact.tex
+clearances.tex
+salary_history
+old/
 
 # Output files
 *.pdf
