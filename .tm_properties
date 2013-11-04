@@ -1,0 +1,7 @@
+# used for LaTEX
+PATH			= "$PATH:/usr/texbin"
+# get rid of all the crap on the file browser
+excludeFiles	= "{*.aux,*.pdf,*.gz,*.log,*.fdb_latexmk,*.fls}"
+
+[ LaTeX ]
+spellChecking 	= true
