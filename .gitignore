@@ -17,6 +17,7 @@
 *.idx
 *.synctex.gz
 *.d
+*.lb
 
 # Private sections
 contact.tex
