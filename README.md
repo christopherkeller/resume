@@ -2,8 +2,8 @@ While I've heavily  tweaked the format to my own tastes, it's an amalgamation of
 
 If you don't want to do your own fonts, you don't need xelatex as the processor.
 
-* index.tex handles the document formatting
-*main.tex contains the actual content
+* index.tex handles the document formatting and organization
+* main.tex contains the actual content
 
 Job specific resume? Branch!
 
