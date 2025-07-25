@@ -5,6 +5,7 @@
 \usepackage{mdwlist}
 \usepackage{textcomp}
 \usepackage{fontspec}
+\usepackage{xcolor}
 \defaultfontfeatures{Ligatures=TeX}
 \setromanfont{Birka LT Pro}
 \pagestyle{empty}
@@ -35,6 +36,7 @@
 \end{tabular*}}
 
 \newcommand{\CPP} {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf\ ++}}
+\newcommand{\updateinfo}[1][\today]{\par\vfill\hfill{\scriptsize\color{gray}Compiled on #1}} % Living document
 
 \begin{document}
     \include{main}
